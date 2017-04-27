@@ -1,3 +1,14 @@
+#container {width:825px;
+      border:1px solid #966;
+      margin:0;
+      padding:0;
+.border1 {width:827px;
+      border:3px solid #963;
+      margin:1px;
+      padding:2px;}
+.border2 {width:839px;
+      border:1px solid #966;
+      margin:12px auto 12px auto;}
 h1{
   color:white;
   font-family:sans-serif;
