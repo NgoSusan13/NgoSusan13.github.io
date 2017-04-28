@@ -36,8 +36,7 @@ div {
 <h2>Description of Project</h2>
 
 <p>
-Our goal was to recreate a soundbite beats app where users can select buttons on the app associated with a specific sound and then play the beats selected. Users have the option of selecting a specific beat provided by the program and the number of times for the soundbites to loop through. The purpose of recreating this app is utilize COMP 110 concepts to create a user-friendly app for people to produce music easily.
-
+Our goal was to recreate a soundbite beats app with selectable buttons, each associated with specific sounds, which then play in succession once you hit a play button. Users have the option of selecting a specific type of beat provided by the program, the number of times it will loop, and the play speed. The purpose of recreating this app was to utilize key COMP110 concepts to create a user-friendly app where people can produce music easily.Our goal was to recreate a soundbite beats app with selectable buttons, each associated with specific sounds, which then play in succession once you hit a play button. Users have the option of selecting a specific type of beat provided by the program, the number of times it will loop, and the play speed. The purpose of recreating this app was to utilize key COMP110 concepts to create a user-friendly app where people can produce music easily.
 </p>
 <hr>
 <h2>Team Members</h2>
@@ -58,43 +57,43 @@ Our goal was to recreate a soundbite beats app where users can select buttons on
 
 
 <ul>
-<li>2D-Array was used to associated each cell (tile) of the array with a specific sound in the form of mp3, so when the button is toggled, the sound assigned to the tile will be played.
+<li>
+Each class makes use of their respective fields, constructors, and methods (if any), as well as parameters, if needed.
 </li>
 <li>
-If-else statements were used for several purposes in this program. One of the main use of this concept was to create conditions where the program would recognize if the buttons are toggled or not, and if so it would follow through with a specific set of code, and vice versa.
+Many of the basic methods are used like the getter, setter, and toString methods.
 </li>
 <li>
-Map Interface with HashMap class was used to store the tile associated with a specific sound (value) with its corresponding button (keys) that was created in SceneBuilder.
+==, <=, !, etc. are used as boolean statements for our if-thens. The this.<method> is used for calling methods within a class on the same object.
 </li>
 <li>
-For loops was also used multiple times in the program. One of the main use of this concept was to ask the program to loop through each cell in the 2D array to see which button was toggled and then play the sound in increment order
+2D-Arrays are used to associate each tile of the grid with a specific mp3 soundbite, so when buttons are toggled the sounds assigned to each tile are played.
 </li>
 <li>
-Simple variable types and classes were used to define types of variables.
+If-else statements are used several times in this program. One of the main uses of this concept is to create conditions where the program would recognize if the buttons are toggled or not, and if so it would follow through with the specific code.
 </li>
 <li>
-Classes had fields, constructors, and methods. Arguments and parameters were used with the complex commas and whatnot. They look so much more legit when there are multiple parameters.
+A map interface using the HashMap class was used to store the tiles as keys and their corresponding sounds as values.
 </li>
 <li>
-Classes used return types matching the type returned (ofc). We used setter and getter methods.
+For-loops are also used multiple times in the program. One of the main uses of this concept is to ask the program to loop through each cell in the 2D array to see which buttons are toggled and then play the respective sounds in order.
 </li>
 <li>
-We used ==, <=, !, etc. for boolean if-thens as well as the this.(method) for calling methods within a class on the same object.
+Applications were used with the inclusion of boilerplate code, which was found using Google.
+<li>
+StackOverflow was a useful site used to reference classes and methods other people have already created i.e. playing soundbites and putting spaces between beats.
 </li>
 <li>
-We “learned” how to use applications. By that, I mean we learned how to apply boilerplate code, which is super confusing but easy to find via the magic of Google.
+Classes are put in different files, so they could be tested individually in the main method with de-bugging code i.e. System.out.println(“sound 1”).
 </li>
 <li>
-More importantly, we learned the infinite power of StackOverflow and how to use the internet to find methods we would have no way of otherwise knowing.
+Files from outside the package were imported by right-clicking unknown objects from StackOverflow that resulted in errors.
 </li>
 <li>
-Classes were used and put in different files so we could test them individually in the main method with de-bugging code i.e. System.out.println(“sound 1”).
+SceneBuilder was used to create the application screen. Adding buttons, labels, etc. was done in SceneBuilder than imported to the program.
 </li>
 <li>
-  Files from outside the package were imported via the all-important “right-click” method on the irl.mouse tool whenever we copied unknown methods from StackOverflow that resulted in the scary red squigglies.
-</li>
-<li>
-FXML and scenebuilder were used to create the application. Apparently it was hecka easier to use scenebuilder than to build it from scratch, so that was awesome. It was like using paint.
+Basically, none of us had any computer science experience prior to taking COMP110, so almost everything in the program is a concept learned.
 </li>
 </ul>
 <hr>
@@ -102,7 +101,7 @@ FXML and scenebuilder were used to create the application. Apparently it was hec
 <h2> Challenges Overcome/ New Concepts Learned </h2>
 
 <p>
-Throughout this project, we ran into a couple of challenges with the audio, mainly because we've never worked with audio before duirng class. For this particular app, we needed to figure out a code that will allow us to pull the mp3 files from a folder and play it when the button associated with the mp3 is toggled. In addition to this, we learned a lot of concepts in relation to how to code html and css in order to report our project on the GitHub page.
+Throughout this project, we ran into a couple of challenges with the audio, mainly because we've never worked with audio before during class. We needed to figure out a code that allowed us to pull the mp3 files from a folder and play it when the button associated with the mp3 is toggled. In addition to this, we learned a lot of concepts for coding in html and css in order to display our project on our GitHub page.
 </p>
 
 <hr>
@@ -117,27 +116,28 @@ Throughout this project, we ran into a couple of challenges with the audio, main
 
 <h3 >Soham Amin</h3>
 <p>
-Introduced the idea of creating a soundbite program similar to the Auxy app from the Apple Store. Also, coded majority of the Boots n Cats program, which included creating the mp3 files, coding the TileController, TileRunner, BeatKeeper, etc. This enabled the program not only to set and get specific mp3 files associated with a button, but also allowed program to loop through the beats once the play button was pressed.
+Introduced the idea of creating a soundbite program similar to the Auxy app from the Apple Store. Also coded the majority of the Boots n Cats program including: creating the mp3 files, coding the TileController, TileRunner, BeatKeeper, etc. This enabled the program to set and get specific mp3 files associated with a button as well as allow the program to loop through the beats once the play button was pressed. Originally, the app only had a 3x4 grid, but he got bored during his Econ class and casually quadrupled the size of the grid for fun.
 </p>
 <h3>Aaron Lee</h3>
 <p>
-Contributed to coding the Boots n Cats program and exported the program as a runnable jar file so it can be pushed into GitHub. In addition, Aaron helped with majority of GitKraken and Atom program so that project summary can be displayed on GitHub web.
+Contributed very tiny, tiny amount to coding the Boots n Cats program (for real, Soham did like all the java stuff--he’s crazy smart) and exported the program as a runnable jar file so it can be pushed into GitHub. Helped with the majority of the GitKraken and Atom program to be able to display the project summary on the GitHub page. Edited the project summary after Susan created the rough draft.
 </p>
 <h3>Susan Ngo</h3>
 <p>
 I'm useless (sorry)
+Edit: Definitely not useless. Contributed to the idea of the program, troubleshooted html issues during office hours, recorded the video for GitHub, created the layout of the GitHub page (kitty gif and all), and made a rough draft of the project summary.
 </p>
 
 <hr>
 <h2>Goals Achieved</h2>
 <p>
-From this Boots n Cats program, we were able to create a running program where mp3 files are embedded into a 8 by 6 2D array and can be prompted to execute a set of methods depending on if the buttons are toggled or untoggled. Additionally, users can ask program to play specific beats, loops a specific number of times, and run at certain speed before play button is pressed. Overall, this project challenged us to utilize the 2D-Array and Maps concept we have learned in COMP 110 lecture to recreate this soundbite app.
+In making this Boots n Cats program, we created a running program where mp3 files are embedded into an 8x6 2D array, able to be prompted into executing a set of methods depending on which buttons are toggled. Additionally, we implemented methods that allow users to specify different beat types, the number of times the program loops, and play speeds before the play button is pressed. Overall, this project challenged us to utilize the recent 2D-Array and Map concept we learned in COMP 110 lectures to recreate this soundbite app.
 
 </p>
 <hr>
 <h2>Goals Outstanding/Future Work</h2>
 <p>
-Although we were able to get the program running, there is still a lot of room for improvement, including adding more audio options into the app, synchronizing the beats so the vertical tiles are played all at once, improving the audio quality when the app is ran multiple times, etc. In order to achieve these goals, we would have to seek for other resources to help fine tune some of the codes and add other methods to carry out desired function.
+Although we were able to get the program running, there is still a lot of room for improvement including: adding more audio options to the app, synchronizing the beats so the vertical tiles are played all at once, and improving the audio quality when the app is run multiple times. For these improvements we would need some help fine tuning some of the code and researching other methods that could accomplish these changes.
 </p>
 </div>
 </body>
